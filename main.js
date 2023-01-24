@@ -23,7 +23,7 @@ button.addEventListener('click', () => {
 
     
 
-    document.getElementById('texto').innerHTML = `Se ha copiado el siguiente URL al portapapeles: ${url}`
+    document.getElementById('texto').innerHTML = `Se ha generado la invitación con éxito: ${url}`
 
 
     let element = document.getElementById("urlButton");
