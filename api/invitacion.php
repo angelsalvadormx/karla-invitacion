@@ -19,8 +19,8 @@ if ($method === "GET") {
         $token_user = $_GET['token'];
         $found = array_filter($json_data, function ($obj) use ($token_user) {
             return $token_user == $obj->token;
-        })[0];
-        echo json_encode($found == null ? (object) [] : $found);
+        });
+        echo json_encode($found == null ? (object) [] : array_pop($found));
         die();
     }
     die();
@@ -49,7 +49,7 @@ if ($method === "POST") {
     $saveData->aceptado = false;
     $saveData->token = $token;
     $saveData->body = $data;
-
+    array_push($json_data, $saveData);
     $newJsonString = json_encode($json_data);
     file_put_contents($file_path, $newJsonString);
     responseRequest(200, 'Creado con éxito', true);
@@ -77,3 +77,5 @@ if ($method === "PUT") {
     file_put_contents($file_path, $newJsonString);
     responseRequest(200, 'Aceptado con éxito', true);
 }
+
+responseRequest(200, 'Método de HTTP no permitido');
