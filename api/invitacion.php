@@ -35,7 +35,7 @@ if ($method === "POST") {
     $data = $body->data;
 
     if (!($token == md5($data->familia . $data->boletos))) {
-        responseRequest(400, 'Token cambiado', true);
+        responseRequest(404, 'Token cambiado', true);
     }
 
     $found = array_filter($json_data, function ($obj) use ($token) {
@@ -53,4 +53,27 @@ if ($method === "POST") {
     $newJsonString = json_encode($json_data);
     file_put_contents($file_path, $newJsonString);
     responseRequest(200, 'Creado con éxito', true);
+}
+
+if ($method === "PUT") {
+    $body = json_decode(file_get_contents('php://input'));
+    if ($body === null) {
+        responseRequest(400, 'No se recibio el body', true);
+    }
+    $token = $body->token;
+
+    $found = false;
+    foreach ($json_data as $obj){
+        if($obj->token == $token){
+            $obj->aceptado = true;
+            $found = true;
+        }
+    }
+    if ($found == false) {
+        responseRequest(404, 'No existe ningun registro', true);
+    }
+
+    $newJsonString = json_encode($json_data);
+    file_put_contents($file_path, $newJsonString);
+    responseRequest(200, 'Aceptado con éxito', true);
 }
