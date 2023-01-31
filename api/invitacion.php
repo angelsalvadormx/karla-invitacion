@@ -4,7 +4,19 @@ include_once('./response.php');
 $file_path = './data/invitacion.json';
 $method = $_SERVER['REQUEST_METHOD'];
 
+header('Content-Type: text/html; charset=utf-8');
 header('Content-Type: application/json');
+
+// Definir el control de acceso
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+header('Access-Control-Allow-Headers: Content-Type,tokenCrreadColMx');
+
+if($_SERVER['REQUEST_METHOD'] == 'OPTIONS'){
+    die();
+}
+
+
 
 if (!file_exists($file_path)) {
     responseRequest(500, 'Data not found', true);
@@ -23,6 +35,7 @@ if ($method === "GET") {
         echo json_encode($found == null ? (object) [] : array_pop($found));
         die();
     }
+    echo json_encode($json_data);
     die();
 }
 
