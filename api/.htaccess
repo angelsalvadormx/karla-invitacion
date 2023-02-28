@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^([A-Za-z0-9-\s]+)$  invitacion.php?token=$1 [L,NC]
+RewriteRule ^$  invitacion.php [L,NC]
