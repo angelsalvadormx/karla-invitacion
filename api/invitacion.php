@@ -47,7 +47,7 @@ if ($method === "POST") {
     $token = $body->token;
     $data = $body->data;
 
-    if (!($token == md5($data->familia . $data->boletos))) {
+    if (!($token == md5(json_encode($data)))) {
         responseRequest(404, 'Token cambiado', true);
     }
 
