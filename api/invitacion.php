@@ -16,8 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'OPTIONS'){
     die();
 }
 
-
-
 if (!file_exists($file_path)) {
     responseRequest(500, 'Data not found', true);
 }
@@ -44,12 +42,12 @@ if ($method === "POST") {
     if ($body === null) {
         responseRequest(400, 'No se recibio el body', true);
     }
-    $token = $body->token;
-    $data = $body->data;
+    $data = $body;
+    $token = md5(json_encode($data));
 
-    if (!($token == md5(json_encode($data)))) {
-        responseRequest(404, 'Token cambiado', true);
-    }
+    // if (!($token == md5(json_encode($data)))) {
+    //     responseRequest(404, 'Token cambiado', true);
+    // }
 
     $found = array_filter($json_data, function ($obj) use ($token) {
         return $token == $obj->token;
@@ -61,11 +59,11 @@ if ($method === "POST") {
     $saveData = new stdClass();
     $saveData->aceptado = false;
     $saveData->token = $token;
-    $saveData->body = $data;
+    $saveData->data = $data;
     array_push($json_data, $saveData);
     $newJsonString = json_encode($json_data);
     file_put_contents($file_path, $newJsonString);
-    responseRequest(200, 'Creado con éxito', true);
+    responseRequest(200, 'Creado con éxito', true,$saveData);
 }
 
 if ($method === "PUT") {
@@ -74,18 +72,24 @@ if ($method === "PUT") {
         responseRequest(400, 'No se recibio el body', true);
     }
     $token = $body->token;
-
+    
+    
     $found = false;
     foreach ($json_data as $obj){
         if($obj->token == $token){
-            $obj->aceptado = true;
+            if (isset($_GET['aceptar'])) {
+                $obj->aceptado = true;
+            }else{
+                $obj->data = $body->data;
+            }
             $found = true;
         }
     }
+
     if ($found == false) {
         responseRequest(404, 'No existe ningun registro', true);
     }
-
+    
     $newJsonString = json_encode($json_data);
     file_put_contents($file_path, $newJsonString);
     responseRequest(200, 'Aceptado con éxito', true);
