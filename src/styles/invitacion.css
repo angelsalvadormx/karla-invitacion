@@ -1,0 +1,142 @@
+
+
+@font-face { font-family: NotoSerifBold; src: url(../fonts/Noto_Serif/NotoSerif-Bold.ttf);}
+@font-face { font-family: NotoSerifRegular; src: url(../fonts/Noto_Serif/NotoSerif-Regular.ttf);}
+@font-face { font-family: NotoSerifBoldItalic; src: url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf);}
+@font-face { font-family: NotoSerifItalic; src: url(../fonts/Noto_Serif/NotoSerif-Italic.ttf);}
+
+
+
+h1.titulo{
+    font-family: 'NotoSerifRegular' !important; 
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 174px;                           
+}
+
+.btn-aceptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18px 18px;
+    gap: 10px;
+  
+    width: 426px;
+    height: 80px;
+    left: 519px;
+    top: 4432px;
+  
+    background: #DCCAC0;
+    border-radius: 13px;
+  }
+
+
+h2{
+  font-family: 'NotoSerifBold' !important; 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem !important;
+  line-height: 87px;
+  text-align: center;
+}
+
+h2.nombreFamilia{
+  font-family: 'NotoSerifBold' !important; 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem !important;
+  line-height: 87px;
+  text-align: center;
+  color: #845900;
+}
+
+h3{
+  font-family: 'NotoSerifBold' !important; 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 54px;
+  text-align: center;
+}
+
+p.parrafo {
+  font-family: 'NotoSerifRegular'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 31px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tituloFamilia {
+  font-family: 'NotoSerifRegular'; 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+}
+
+p.familia {
+  font-family: 'NotoSerifRegular'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 44px;
+}
+
+
+header{
+    background: linear-gradient(#DCCAC0, #fff) !important; 
+    padding-top: 20px !important;
+}
+
+.linea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 4px solid rgb(220, 202, 192);
+}
+
+section.header{
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.pink{
+  background-color: #DCCAC0;
+}
+
+section.separador{
+  height: 20px;
+  padding: 0px !important;
+}
+
+ul{
+  list-style-type: none;  
+}
+
+.img-icono {
+  max-width: 80%;
+  height: auto;
+}
+
+div.separador-120{
+  height: 120px;
+}
+
+div.separador-30{
+  height: 30px;
+}
+
+p.fecha {
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
