@@ -10,7 +10,7 @@
 h1.titulo{
     font-family: 'NotoSerifRegular' !important; 
     font-weight: 500;
-    font-size: 128px;
+    font-size: 6rem;
     line-height: 174px;                           
 }
 
@@ -29,7 +29,6 @@ h1.titulo{
     background: #DCCAC0;
     border-radius: 13px;
   }
-
 
 h2{
   font-family: 'NotoSerifBold' !important; 
@@ -54,9 +53,13 @@ h3{
   font-family: 'NotoSerifBold' !important; 
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 1.6rem;
   line-height: 54px;
   text-align: center;
+}
+
+h3.ceremonia{
+  font-size: 1.6rem;
 }
 
 p.parrafo {
@@ -82,10 +85,10 @@ p.familia {
   font-family: 'NotoSerifRegular'; 
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 44px;
+  margin: 5px;
 }
-
 
 header{
     background: linear-gradient(#DCCAC0, #fff) !important; 
@@ -118,13 +121,19 @@ section.separador{
   padding: 0px !important;
 }
 
+.col-6-offset {
+  position: relative;
+  left: -50px; /* ajusta la posición a la izquierda */
+}
+
+
 ul{
   list-style-type: none;  
 }
 
 .img-icono {
   max-width: 80%;
-  height: auto;
+  height: 13rem;
 }
 
 div.separador-120{
@@ -137,6 +146,6 @@ div.separador-30{
 
 p.fecha {
   background-color: white;
-  padding: 15px;
+  padding: 1.75rem;
   border-radius: 50%;
 }
