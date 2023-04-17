@@ -5,13 +5,38 @@
 @font-face { font-family: NotoSerifBoldItalic; src: url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf);}
 @font-face { font-family: NotoSerifItalic; src: url(../fonts/Noto_Serif/NotoSerif-Italic.ttf);}
 
+#footer .label,
+#footer h4,
+#footer .colxsoft,
+#footer p,
+#attendance .footer-card span,
+#attendance h4,
+#attendance p,
+#attendance h3,
+#attendance h2,
+#nameFamiliy,
+#gift main p,
+#gift h2,
+.item-godfather h3,
+.item-godfather p,
+#godfather h3,
+#godfather h2,
+p.familia,
+h3.ceremonia,
+.header-counter,
+#grandparents sapn,
+p.familia,
+.subTitleSec, 
+.date-header span{
+  font-family: 'NotoSerifRegular' !important; 
+}
 
 
 h1.titulo{
     font-family: 'NotoSerifRegular' !important; 
     font-weight: 500;
-    font-size: 6rem;
-    line-height: 174px;                           
+    font-size: 70px;
+    line-height: 126px;                           
 }
 
 .btn-aceptar{
@@ -39,14 +64,14 @@ h2{
   text-align: center;
 }
 
-h2.nombreFamilia{
-  font-family: 'NotoSerifBold' !important; 
+#nameFamiliy{
   font-style: normal;
   font-weight: 600;
   font-size: 3rem !important;
   line-height: 87px;
   text-align: center;
-  color: #845900;
+  color: #AEA19A;
+  /*! text-shadow: 1px 2px 1px #000; */
 }
 
 h3{
@@ -58,18 +83,17 @@ h3{
   text-align: center;
 }
 
-h3.ceremonia{
-  font-size: 1.6rem;
-}
 
 p.parrafo {
   font-family: 'NotoSerifRegular'; 
   font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 31px;
+  font-size: 12px;
   text-align: center;
   padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  font-style: italic;
+  margin-bottom: 9px;
 }
 
 .tituloFamilia {
@@ -81,25 +105,73 @@ p.parrafo {
   text-align: center;
 }
 
-p.familia {
-  font-family: 'NotoSerifRegular'; 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 44px;
-  margin: 5px;
+
+
+
+/* header */
+.lines{
+  display: flex;
+}
+
+.lines >div{
+  width: 25%;
+  height: 4px;
+}
+.line-1{
+  background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
+}
+
+.line-2{
+  background: linear-gradient(270deg, #F8E2B4 1.89%, #DCCAC0 131.65%);
+}
+
+.line-3{
+ background: linear-gradient(269.99deg, #F8E2B4 6.56%, #DCCAC0 116.49%);
+ transform: rotate(180deg);
+}
+.line-6,
+.line-4{
+  background: #DCCAC0;
 }
 
 header{
     background: linear-gradient(#DCCAC0, #fff) !important; 
     padding-top: 20px !important;
 }
+.date-header{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.date-header span{
+  margin: 0 20px;
+  font-weight: 600;
+  
+}
 
-.linea {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 4px solid rgb(220, 202, 192);
+.line-5,
+.line-6{
+  height: 4px;
+  width: 130px;
+}
+.line-5{
+  background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
+}
+
+.subTitleSec{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;  
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p.familia{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 44px;
+  margin-bottom: 0;
 }
 
 section.header{
@@ -107,45 +179,258 @@ section.header{
   padding-bottom: 100px;
 }
 
-section{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 section.pink{
   background-color: #DCCAC0;
+  padding: 44px 0;
 }
+
+
+#parents{
+  margin-bottom: 40px;
+}
+#grandparents {
+  margin-top: 10px;
+}
+#grandparents main{
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* counter */
+
+.header-counter{
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 87px;
+text-align: center;
+}
+#counter h3{
+  width: 100%;
+}
+#counter main .counter-main{
+  width: 56%;
+  margin: 0 auto;
+}
+
+p.fecha {
+  background-color: white;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 30px;
+  box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.16);
+  margin-bottom: 0;
+}
+
 
 section.separador{
   height: 20px;
   padding: 0px !important;
 }
 
-.col-6-offset {
-  position: relative;
-  left: -50px; /* ajusta la posición a la izquierda */
-}
 
 
 ul{
   list-style-type: none;  
 }
 
+/* location  */
+.img-bckg{
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.item-location{
+  position: relative;  
+}
+.item-location main{
+  position: relative;
+  z-index: 2;
+}
+.evento .blur-section{
+  left: 45px;
+}
+.blur-section{
+  position: absolute;
+  width: 50%;
+  height: 95%;
+  backdrop-filter: blur(7.5px);
+  right: 45px;
+  border-radius: 10px;
+  z-index: 1;
+}
+#location .lines{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.location-text{
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+  margin: 16px auto;
+  text-transform: uppercase;
+}
+
+
+h3.ceremonia{
+  font-size: 1.6rem;
+ margin-bottom: 15px; 
+}
+
+#godfather h2{
+  font-size: 36px !important;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.item-godfather{
+  width: 227px;
+}
+.item-godfather{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item-godfather h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.item-godfather p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 37px;
+}
+
+/* gift */
+#gift h2{
+  margin-bottom: 25px;
+  font-size: 37px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#gift .img-bckg{
+  width: 124px;
+ height: 100px;
+  margin: 0 auto;
+}
+
+#gift main .description,
+#gift main .title{
+  text-align: center !important;
+  font-style: italic;
+}
+#gift .title{
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#gift .description{
+  font-size: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
 .img-icono {
-  max-width: 80%;
-  height: 13rem;
+  width: 320px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 26px;
+  height: 240px;
 }
 
-div.separador-120{
-  height: 120px;
+/* attendance */
+
+#attendance{
+  padding: 20px 0;
+  height: 700px;
 }
 
-div.separador-30{
-  height: 30px;
+#attendance main{
+  height: 250px;
+  width: 80%;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid #ddd;  
+  box-shadow: 2px 2px 3px #ddd;
 }
 
-p.fecha {
-  background-color: white;
-  padding: 1.75rem;
-  border-radius: 50%;
+.main-card{
+  text-align: center;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.main-card h4{
+  margin-bottom: 15px;
+}
+.main-card .desc{
+  margin-top: 9px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#attendance .lines{
+  width: 70%;
+  margin:  0 auto;
+}
+
+.footer-card{
+  height: 15%;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  
+}
+.footer-card span{
+  font-size: 15px;
+}
+
+#btnConfirm{
+  border-radius: 6px;
+  width: 215px;
+  margin-top: 40px;
+  background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
+  color: #393030;
+  height: 45px;
+}
+
+/* Footer */
+#footer {
+  padding-bottom: 40px;;
+}
+
+#footer h4,
+#footer h4 a{
+  font-size: 15px;
+  color: #b0b0b0 !important;
+  margin-bottom: 6px;
+}
+
+#footer .label{
+  font-size: 10px;
+  text-align: center;
+  color: #b0b0b0;
+}
+
+
+
+
+
+
