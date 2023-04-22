@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^([A-Za-z0-9-\s]+)$  index.html [L,NC]
