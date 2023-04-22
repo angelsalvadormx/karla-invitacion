@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:8080/api";
+const baseURL = "https://colxsoft.com/invitaciones/app/api";
 const apiVersion = "/";
 
 const getToken = () => {
