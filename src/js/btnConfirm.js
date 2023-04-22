@@ -4,6 +4,7 @@ const btnConfirm = document.getElementById("btnConfirm");
 //Mensaje de invitacion aceptada
 const msjConfirmacion = document.getElementById("msjConfirmacion");
 
+
 //Mandar a la API que la invitación ha sido aceptada
 btnConfirm.addEventListener("click", function() {
     const token = getToken();
