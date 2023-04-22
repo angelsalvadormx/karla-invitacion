@@ -5,6 +5,7 @@
 @font-face { font-family: NotoSerifBoldItalic; src: url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf);}
 @font-face { font-family: NotoSerifItalic; src: url(../fonts/Noto_Serif/NotoSerif-Italic.ttf);}
 
+#msjConfirmacion,
 #footer .label,
 #footer h4,
 #footer .colxsoft,
@@ -31,6 +32,13 @@ p.familia,
   font-family: 'NotoSerifRegular' !important; 
 }
 
+
+.displayNone{
+  display: none !important;
+}
+.showElement{
+  display: initial;
+}
 
 h1.titulo{
     font-family: 'NotoSerifRegular' !important; 
@@ -411,6 +419,12 @@ h3.ceremonia{
   height: 45px;
 }
 
+#msjConfirmacion {
+  margin-top: 30px;
+  font-size: 13px;
+  font-style: italic;
+}
+
 /* Footer */
 #footer {
   padding-bottom: 40px;;
@@ -429,11 +443,7 @@ h3.ceremonia{
   color: #b0b0b0;
 }
 
-p#msjConfirmacion {
-  margin-top: 9px;
-  font-size: 12px;
-  font-style: italic;
-}
+
 
 
 

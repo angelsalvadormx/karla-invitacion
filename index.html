@@ -1,12 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitacion</title>
+    <title>Mis XV Karla</title>
+
+    <link rel="stylesheet" href="./src/styles/invitacion.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap.min.css">
 </head>
+
 <body>
-    <h2>Colxsoft esta trabajando...</h2>
+    <!--Header-->
+    <header>
+        <section class="header p-2">
+            <section class="img-icono" style="background-image: url('./src/img/mis-xv.png')"></section>
+            <div class="container d-flex justify-content-center">
+                <h1 class="titulo">Karla</h1>
+            </div>
+            <div class="container">
+                <p class="parrafo">Mis 15 años marcan el comienzo de una nueva etapa de mi vida. Una etapa maravillosa
+                    donde el amor y la alegría están conmigo. </br> Por eso quiero compartir este día tan especial con
+                    todas las personas a las que amo y me aman, y tú tienes que ser parte de esta fiesta.</p>
+                <section class="lines">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                    <div class="line-4"></div>
+                </section>
+                <section class="date-header d-flex justify-content-center align-items-center">
+                    <div class="line-5"></div>
+                    <span>21-04-2023</span>
+                    <div class="line-6"></div>
+                </section>
+            </div>
+        </section>
+    </header>
+    <section id="parents">
+        <div>
+            <h4 class="subTitleSec">Mis padres</h4>
+            <p class="familia d-flex w-100 justify-content-center text-center">Miriam Hernández & Luis López Gutiérrez
+            </p>
+        </div>
+        <div id="grandparents">
+            <h4 class="subTitleSec">Mis abuelos</h4>
+            <main class="d-flex justify-content-between">
+                <section class="d-flex flex-column align-items-center">
+                    <sapn class="text-center">Luis Hernández Pérez </sapn>
+                    <span> & </span>
+                    <sapn class="text-center">Juana Martínez Ochoa</sapn>
+                </section>
+                <section class="d-flex flex-column align-items-center">
+                    <sapn class="text-center">José López Martínez </sapn>
+                    <span> & </span>
+                    <sapn class="text-center">Raquel Gutiérrez Flores</sapn>
+                </section>
+            </main>
+        </div>
+
+    </section>
+    <!--Section contador-->
+    <section class="pink" id="counter">
+        <div class="container d-flex">
+            <h3 class="header-counter text-center">YA SÓLO FALTAN</h3>
+        </div>
+        <main>
+            <article class="counter-main d-flex justify-content-between">
+                <div class="counter-item">
+                    <div class="d-flex justify-content-center">
+                        <p id="days" class=" fecha">⠀</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="familia">Días</p>
+                    </div>
+                </div>
+                <div class="counter-item">
+                    <div class="fecha d-flex justify-content-center">
+                        <p class="fecha" id="hours"> ⠀</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="familia">Horas</p>
+                    </div>
+                </div>
+                <div class="counter-item">
+                    <div class="fecha d-flex justify-content-center">
+                        <p class=" fecha" id="minutes">⠀</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="familia">Minutos</p>
+                    </div>
+                </div>
+                <div class="counter-item">
+                    <div class="fecha d-flex justify-content-center">
+                        <p class=" fecha" id="seconds">⠀</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="familia">Segundos</p>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </section>
+
+    <section id="location">
+        <div class="item-location d-flex align-items-center justify-content-center">
+            <div class="blur-section"></div>
+            <div class="w-50">
+                <div class="img-bckg" style="background-image: url('./src/img/img-iglesia.png');"></div>
+            </div>
+            <main class="w-50 d-flex flex-column justify-content-center">
+                <h3 class="ceremonia">CEREMONIA</h3>
+                <section class="lines">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                    <div class="line-4"></div>
+                </section>
+                <p class="location-text">IGLESIA LA MERCED
+                    F. I MADERO, CENTRO, Colima
+                    7:00 PM</p>
+            </main>
+        </div>
+        <div class="item-location evento d-flex align-items-center justify-content-center">
+            <main class="w-50 col-6 d-flex flex-column justify-content-center">
+                <h3 class="ceremonia">EVENTO</h3>
+                <section class="lines">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                    <div class="line-4"></div>
+                </section>
+                <p class="location-text">Jardines del centenario
+                    Carranza #1300, Buen fin, Colima
+                    9:00 PM</p>
+            </main>
+            <div class="blur-section"></div>
+            <div class="w-50">
+                <div class="img-bckg" style="background-image: url('./src/img/img-picnic.png');"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Section padrinos-->
+    <section class="pink" id="godfather">
+        <div class="d-flex justify-content-center">
+            <h2>PADRINOS</h2>
+        </div>
+        <main class="d-flex flex-wrap justify-content-center">
+            <div class="item-godfather">
+                <h3>Joel Hernández López</h3>
+                <p>Padrino velación</p>
+            </div>
+            <div class="item-godfather">
+                <h3>Karla Hernández López</h3>
+                <p>Madrina velación</p>
+            </div>
+            <div class="item-godfather">
+                <h3>Cristal López Suárez</h3>
+                <p>Madrina de brindis</p>
+            </div>
+            <div class="item-godfather">
+                <h3>Saúl Ceballos López</h3>
+                <p>Padrino de pastel</p>
+            </div>
+            <div class="item-godfather">
+                <h3>Cecilia Preciado Flores</h3>
+                <p>Madrina de vestido</p>
+            </div>
+            <div class="item-godfather">
+                <h3>Sara López Suárez</h3>
+                <p>Madrina de cojín</p>
+            </div>
+        </main>
+    </section>
+    <section class="separador"></section>
+    <section class="pink" id="gift">
+        <div class="d-flex justify-content-center">
+            <h2>Regalos</h2>
+        </div>
+        <main>
+            <div class="img-bckg" style="background-image: url('./src/img/img-icono-mail.png');"></div>
+            <p class="title">Lluvia de sobres</p>
+            <p class="description">La lluvia de sobres es una tradición en algunas fiestas de quince años en la que los
+                invitados a la fiesta le dan dinero a la quinceañera como un regalo</p>
+        </main>
+    </section>
+    <section id="attendance" class="d-flex flex-column justify-content-center align-items-center">
+        <main>
+            <div class="main-card">
+                <span>Familia</span>
+                <h4 id="familia"></h4>
+                <section class="lines">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                    <div class="line-4"></div>
+                </section>
+                <p class="desc">Su presencia es muy importante para mi!</p>
+            </div>
+            <div class="footer-card">
+                <span id="boletos">4 Boletos</span>
+            </div>
+
+        </main>
+        <button id="btnConfirm" class="btn"> Confirmar asistencia</button>
+        <span id="msjConfirmacion" class="desc displayNone">La invitación ha sido aceptada</span>
+        <section class="separador"></section>
+    </section>
+    <footer id="footer">
+        <main class="d-flex align-items-center justify-content-center flex-column">
+            <h4> <a href="https://colxsoft.com" target="_blank"> Colxsoft </a> | Invitaciones</h4>
+        </main>
+        <p class="label">Crea tu invitaci&oacute;n con nostros</p>
+        <div class="social-media"></div>
+    </footer>
+
+    <!--Bootstrap-->
+
+    <script src="./src/js/api.js"></script>
+    <script src="./src/js/getName.js"></script>
+    <script src="./src/js/date.js"></script>
+    <script src="./src/js/btnConfirm.js"></script>
 </body>
+
 </html>
