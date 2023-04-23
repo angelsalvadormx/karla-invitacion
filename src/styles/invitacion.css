@@ -375,10 +375,13 @@ p.fecha {
   margin-bottom: 0;
 }
 
-
 section.separador {
   height: 20px;
   padding: 0px !important;
+}
+
+#counter main{
+  margin-bottom: 15px;
 }
 
 

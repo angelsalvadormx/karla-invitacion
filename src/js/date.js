@@ -32,7 +32,7 @@ const countdown = () => {
 }
 
 const getEventDate = () => {
-  return new Date('05/25/2023 08:00 PM');
+  return new Date('05/26/2023 08:00 PM');
 }
 
 const updateData = (days, hours, minutes, seconds) => {
