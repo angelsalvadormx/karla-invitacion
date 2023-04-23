@@ -1,9 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 
-@font-face { font-family: NotoSerifBold; src: url(../fonts/Noto_Serif/NotoSerif-Bold.ttf);}
-@font-face { font-family: NotoSerifRegular; src: url(../fonts/Noto_Serif/NotoSerif-Regular.ttf);}
-@font-face { font-family: NotoSerifBoldItalic; src: url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf);}
-@font-face { font-family: NotoSerifItalic; src: url(../fonts/Noto_Serif/NotoSerif-Italic.ttf);}
+
+@font-face {
+  font-family: NotoSerifBold;
+  src: url(../fonts/Noto_Serif/NotoSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: NotoSerifRegular;
+  src: url(../fonts/Noto_Serif/NotoSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: NotoSerifBoldItalic;
+  src: url(../fonts/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: NotoSerifItalic;
+  src: url(../fonts/Noto_Serif/NotoSerif-Italic.ttf);
+}
 
 #msjConfirmacion,
 #footer .label,
@@ -27,44 +49,138 @@ h3.ceremonia,
 .header-counter,
 #grandparents sapn,
 p.familia,
-.subTitleSec, 
-.date-header span{
-  font-family: 'NotoSerifRegular' !important; 
+.subTitleSec,
+.date-header span {
+  font-family: 'NotoSerifRegular' !important;
 }
 
+/* colxsoftInfo */
+#colxsoftInfo {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 3;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+}
 
-.displayNone{
+#colxsoftInfo.hide {
+  opacity: 0;
+}
+
+#colxsoftInfo h3 {
+  position: relative;
+  font-weight: inherit;
+  font-family: inherit;
+  color: #a4a1a1;
+  overflow: hidden;
+  -webkit-transition: right 1.5s ease, left 1.5s ease;
+  -o-transition: right 1.5s ease, left 1.5s ease;
+  transition: right 1.5s ease, left 1.5s ease;
+}
+
+#colxsoftInfo #text-left,
+#colxsoftInfo #text-right {
+  overflow: hidden;
+}
+
+#colxsoftInfo #text-left {
+  width: 116px;
+}
+
+#colxsoftInfo #text-left h3 {
+  right: -114px;
+}
+
+#colxsoftInfo .start #text-left h3 {
+  right: 0;
+}
+
+#colxsoftInfo #text-right {
+  width: 154px;
+}
+#colxsoftInfo .start #text-right h3 {
+  left: 0;
+}
+#colxsoftInfo #text-right h3 {
+  left: -151px;
+}
+
+#colxsoftInfo main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#colxsoftInfo .divider-colxsoft {
+  width: 2.5px;
+  height: 40px;
+  /*! border-inline-start: 3px solid rgba(5, 5, 5, 0.06); */
+  background: #f0f0f0;
+  border-radius: 2px;
+}
+
+#msg-api {
+  color: #a4a1a1;
+  margin-top: 5px;
+  opacity: 0;
+  height: 25px;
+  -webkit-transition: opacity .8s ease;
+  -o-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+
+#msg-api.show {
+  opacity: 1 !important;
+}
+
+.z-index-3 {
+  z-index: -3 !important;
+}
+
+.displayNone {
   display: none !important;
 }
-.showElement{
+
+.showElement {
   display: initial;
 }
 
-h1.titulo{
-    font-family: 'NotoSerifRegular' !important; 
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 126px;                           
+h1.titulo {
+  font-family: 'NotoSerifRegular' !important;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 126px;
 }
 
-.btn-aceptar{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 18px 18px;
-    gap: 10px;
-  
-    width: 426px;
-    height: 80px;
-    left: 519px;
-    top: 4432px;
-  
-    background: #DCCAC0;
-    border-radius: 13px;
-  }
+.btn-aceptar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 18px 18px;
+  gap: 10px;
 
-h2{
-  font-family: 'NotoSerifBold' !important; 
+  width: 426px;
+  height: 80px;
+  left: 519px;
+  top: 4432px;
+
+  background: #DCCAC0;
+  border-radius: 13px;
+}
+
+h2 {
+  font-family: 'NotoSerifBold' !important;
   font-style: normal;
   font-weight: 600;
   font-size: 3rem !important;
@@ -72,7 +188,7 @@ h2{
   text-align: center;
 }
 
-#nameFamiliy{
+#nameFamiliy {
   font-style: normal;
   font-weight: 600;
   font-size: 3rem !important;
@@ -82,8 +198,8 @@ h2{
   /*! text-shadow: 1px 2px 1px #000; */
 }
 
-h3{
-  font-family: 'NotoSerifBold' !important; 
+h3 {
+  /*! font-family: 'NotoSerifBold' !important; */
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -93,7 +209,7 @@ h3{
 
 
 p.parrafo {
-  font-family: 'NotoSerifRegular'; 
+  font-family: 'NotoSerifRegular';
   font-style: normal;
   font-size: 12px;
   text-align: center;
@@ -105,7 +221,7 @@ p.parrafo {
 }
 
 .tituloFamilia {
-  font-family: 'NotoSerifRegular'; 
+  font-family: 'NotoSerifRegular';
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -117,64 +233,80 @@ p.parrafo {
 
 
 /* header */
-.lines{
+.lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.lines >div{
+.lines>div {
   width: 25%;
   height: 4px;
 }
-.line-1{
+
+.line-1 {
+  background: -o-linear-gradient(180.01deg, #DCCAC0 -34.5%, #F8E2B4 100%);
   background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
 }
 
-.line-2{
+.line-2 {
+  background: -webkit-gradient(linear, right top, left top, color-stop(1.89%, #F8E2B4), color-stop(131.65%, #DCCAC0));
+  background: -o-linear-gradient(right, #F8E2B4 1.89%, #DCCAC0 131.65%);
   background: linear-gradient(270deg, #F8E2B4 1.89%, #DCCAC0 131.65%);
 }
 
-.line-3{
- background: linear-gradient(269.99deg, #F8E2B4 6.56%, #DCCAC0 116.49%);
- transform: rotate(180deg);
+.line-3 {
+  background: -o-linear-gradient(180.01deg, #F8E2B4 6.56%, #DCCAC0 116.49%);
+  background: linear-gradient(269.99deg, #F8E2B4 6.56%, #DCCAC0 116.49%);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
+
 .line-6,
-.line-4{
+.line-4 {
   background: #DCCAC0;
 }
 
-header{
-    background: linear-gradient(#DCCAC0, #fff) !important; 
-    padding-top: 20px !important;
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#DCCAC0), to(#fff)) !important;
+  background: -o-linear-gradient(#DCCAC0, #fff) !important;
+  background: linear-gradient(#DCCAC0, #fff) !important;
+  padding-top: 20px !important;
 }
-.date-header{
+
+.date-header {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.date-header span{
+
+.date-header span {
   margin: 0 20px;
   font-weight: 600;
-  
+
 }
 
 .line-5,
-.line-6{
+.line-6 {
   height: 4px;
   width: 130px;
 }
-.line-5{
+
+.line-5 {
+  background: -o-linear-gradient(180.01deg, #DCCAC0 -34.5%, #F8E2B4 100%);
   background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
 }
 
-.subTitleSec{
+.subTitleSec {
   font-weight: 600;
   font-size: 24px;
-  line-height: 41px;  
+  line-height: 41px;
   width: 100%;
   text-align: center;
   margin-bottom: 0;
 }
 
-p.familia{
+p.familia {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -182,24 +314,26 @@ p.familia{
   margin-bottom: 0;
 }
 
-section.header{
+section.header {
   padding-top: 10px;
   padding-bottom: 100px;
 }
 
-section.pink{
+section.pink {
   background-color: #DCCAC0;
   padding: 44px 0;
 }
 
 
-#parents{
+#parents {
   margin-bottom: 40px;
 }
+
 #grandparents {
   margin-top: 10px;
 }
-#grandparents main{
+
+#grandparents main {
   width: 75%;
   margin: 0 auto;
 }
@@ -207,17 +341,19 @@ section.pink{
 
 /* counter */
 
-.header-counter{
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 87px;
-text-align: center;
+.header-counter {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 87px;
+  text-align: center;
 }
-#counter h3{
+
+#counter h3 {
   width: 100%;
 }
-#counter main .counter-main{
+
+#counter main .counter-main {
   width: 56%;
   margin: 0 auto;
 }
@@ -227,60 +363,72 @@ p.fecha {
   border-radius: 50%;
   width: 66px;
   height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-weight: 500;
   font-size: 30px;
+  -webkit-box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.16);
   box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.16);
   margin-bottom: 0;
 }
 
 
-section.separador{
+section.separador {
   height: 20px;
   padding: 0px !important;
 }
 
 
 
-ul{
-  list-style-type: none;  
+ul {
+  list-style-type: none;
 }
 
 /* location  */
-.img-bckg{
+.img-bckg {
   width: 100%;
   height: 250px;
   background-position: center;
   background-size: cover;
 }
 
-.item-location{
-  position: relative;  
+.item-location {
+  position: relative;
 }
-.item-location main{
+
+.item-location main {
   position: relative;
   z-index: 2;
 }
-.evento .blur-section{
+
+.evento .blur-section {
   left: 45px;
 }
-.blur-section{
+
+.blur-section {
   position: absolute;
   width: 50%;
   height: 95%;
+  -webkit-backdrop-filter: blur(7.5px);
   backdrop-filter: blur(7.5px);
   right: 45px;
   border-radius: 10px;
   z-index: 1;
 }
-#location .lines{
+
+#location .lines {
   width: 85%;
   margin: 0 auto;
 }
 
-.location-text{
+.location-text {
   margin-top: 15px;
   width: 80%;
   text-align: center;
@@ -289,31 +437,34 @@ ul{
 }
 
 
-h3.ceremonia{
+h3.ceremonia {
   font-size: 1.6rem;
- margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
-#godfather h2{
+#godfather h2 {
   font-size: 36px !important;
   margin-bottom: 40px;
   font-weight: 500;
 }
 
-.item-godfather{
+.item-godfather {
   width: 227px;
 }
-.item-godfather{
+
+.item-godfather {
   text-align: center;
   margin-bottom: 20px;
 }
-.item-godfather h3{
+
+.item-godfather h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   margin-bottom: 0;
 }
-.item-godfather p{
+
+.item-godfather p {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -321,31 +472,32 @@ h3.ceremonia{
 }
 
 /* gift */
-#gift h2{
+#gift h2 {
   margin-bottom: 25px;
   font-size: 37px !important;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-#gift .img-bckg{
+#gift .img-bckg {
   width: 124px;
- height: 100px;
+  height: 100px;
   margin: 0 auto;
 }
 
 #gift main .description,
-#gift main .title{
+#gift main .title {
   text-align: center !important;
   font-style: italic;
 }
-#gift .title{
+
+#gift .title {
   font-weight: 600;
   margin-top: 20px;
   font-size: 16px;
 }
 
-#gift .description{
+#gift .description {
   font-size: 10px;
   width: 60%;
   margin: 0 auto;
@@ -362,58 +514,73 @@ h3.ceremonia{
 
 /* attendance */
 
-#attendance{
+#attendance {
   padding: 20px 0;
   height: 700px;
 }
 
-#attendance main{
+#attendance main {
   height: 250px;
   width: 80%;
   border-radius: 8px;
   margin: 0 auto;
   margin-top: 30px;
-  border: 1px solid #ddd;  
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 2px 2px 3px #ddd;
   box-shadow: 2px 2px 3px #ddd;
 }
 
-.main-card{
+.main-card {
   text-align: center;
   height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.main-card h4{
+.main-card h4 {
   margin-bottom: 15px;
 }
-.main-card .desc{
+
+.main-card .desc {
   margin-top: 9px;
   font-size: 12px;
   font-style: italic;
 }
 
-#attendance .lines{
+#attendance .lines {
   width: 70%;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
-.footer-card{
+.footer-card {
   height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   padding-right: 20px;
-  
+
 }
-.footer-card span{
+
+.footer-card span {
   font-size: 15px;
 }
 
-#btnConfirm{
+#btnConfirm {
   border-radius: 6px;
   width: 215px;
   margin-top: 40px;
+  background: -o-linear-gradient(180.01deg, #DCCAC0 -34.5%, #F8E2B4 100%);
   background: linear-gradient(269.99deg, #DCCAC0 -34.5%, #F8E2B4 100%);
   color: #393030;
   height: 45px;
@@ -427,26 +594,19 @@ h3.ceremonia{
 
 /* Footer */
 #footer {
-  padding-bottom: 40px;;
+  padding-bottom: 40px;
+  ;
 }
 
 #footer h4,
-#footer h4 a{
+#footer h4 a {
   font-size: 15px;
   color: #b0b0b0 !important;
   margin-bottom: 6px;
 }
 
-#footer .label{
+#footer .label {
   font-size: 10px;
   text-align: center;
   color: #b0b0b0;
 }
-
-
-
-
-
-
-
-

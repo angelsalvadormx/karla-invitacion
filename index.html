@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <title>Mis XV Karla</title>
 
-    <link rel="stylesheet" href="./src/styles/invitacion.css">
-    <link rel="stylesheet" href="./src/styles/responsive.css">
-    <link rel="stylesheet" href="./src/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles/invitacion.css?ver=2">
+    <link rel="stylesheet" href="./src/styles/responsive.css?ver=2">
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap.min.css?ver=2">
 </head>
 
 <body>
+
+    <section id="colxsoftInfo" class="d-flex justify-content-center align-items-center flex-column">
+        <main id="mainColxsoftInfo">
+            <div id="text-left"> <h3>Colxsoft</h3> </div>
+            <div id="text-right"><h3>invitaci&oacute;nes</h3></div>
+        </main>
+
+        <p id="msg-api"></p>
+    </section>
     <!--Header-->
     <header>
         <section class="header p-2">
@@ -38,6 +51,8 @@
             </div>
         </section>
     </header>
+
+    
     <section id="parents">
         <div>
             <h4 class="subTitleSec">Mis padres</h4>
@@ -214,19 +229,22 @@
     </section>
     <footer id="footer">
         <main class="d-flex align-items-center justify-content-center flex-column">
-            <h4> <a href="https://colxsoft.com" target="_blank"> Colxsoft </a> | Invitaciones</h4>
+            <h4> <a href="https://colxsoft.com" target="_blank"> Colxsoft </a> | Invitaci&oacute;nes</h4>
         </main>
-        <p class="label">Crea tu invitaci&oacute;n con nostros</p>
+        <p class="label">Crea tu invitaci&oacute;n con nosotros</p>
         <div class="social-media"></div>
     </footer>
 
     <!--Bootstrap-->
 
+    <script src="./src/js/btnConfirm.js"></script>
     <script src="./src/js/api.js"></script>
     <script src="./src/js/functions.js"></script>
     <script src="./src/js/getName.js"></script>
     <script src="./src/js/date.js"></script>
-    <script src="./src/js/btnConfirm.js"></script>
+    <script>
+        startApp();
+    </script>
 </body>
 
 </html>
