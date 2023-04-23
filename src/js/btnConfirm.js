@@ -7,16 +7,18 @@ const msjConfirmacion = document.getElementById("msjConfirmacion");
 
 //Mandar a la API que la invitación ha sido aceptada
 btnConfirm.addEventListener("click", function() {
+    this.disabled = true;
+    
     const token = getToken();
     fetch(getApiURL()+token, {
-    method: 'PUT',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    //Mandar los datos 
-    body: JSON.stringify({
-        'token': token 
-    })
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        //Mandar los datos 
+        body: JSON.stringify({
+            'token': token 
+        })
     })
     .then(response => response.json())
     .then(data => {
