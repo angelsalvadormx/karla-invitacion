@@ -1,3 +1,4 @@
+
 @media (min-width: 1000px){
   #colxsoftInfo,
   section.header,
@@ -22,7 +23,9 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%)
   }
   #labelTooBig{
     display: block;
@@ -168,7 +171,9 @@ margin: 0 auto;
   bottom: 0; 
   border-radius: 12px;
    
-  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+   
+          backdrop-filter: blur(3.5px);
   }
   .evento .blur-section{
   left: 0;
@@ -215,8 +220,15 @@ margin: 0 auto;
   }
   p.familia{
     
+  display: -webkit-box;
+    
+  display: -ms-flexbox;
+    
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   }
   p.familia span{
     
@@ -228,7 +240,9 @@ margin: 0 auto;
   }
   #grandparents main{
     
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+    
+      flex-wrap: wrap;
   }
   #grandparents main > section{
     margin: 13px auto;
@@ -414,7 +428,9 @@ margin: 0 auto;
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%)
   }
   #labelTooSmall{
     display: block;

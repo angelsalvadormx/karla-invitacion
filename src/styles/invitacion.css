@@ -1,7 +1,4 @@
 
-
-
-
 @font-face {
   font-family: NotoSerifBold;
   src: url(../fonts/Noto_Serif/NotoSerif-Bold.ttf);
@@ -246,8 +243,8 @@ p.parrafo {
 }
 
 .line-2 {
-  background: -webkit-gradient(linear, right top, left top, color-stop(1.89%, #F8E2B4), color-stop(131.65%, #DCCAC0));
   background: -o-linear-gradient(right, #F8E2B4 1.89%, #DCCAC0 131.65%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(1.89%, #F8E2B4), color-stop(131.65%, #DCCAC0));
   background: linear-gradient(270deg, #F8E2B4 1.89%, #DCCAC0 131.65%);
 }
 
@@ -265,8 +262,8 @@ p.parrafo {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#DCCAC0), to(#fff)) !important;
   background: -o-linear-gradient(#DCCAC0, #fff) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DCCAC0), to(#fff)) !important;
   background: linear-gradient(#DCCAC0, #fff) !important;
   padding-top: 20px !important;
 }
@@ -631,10 +628,7 @@ h3.ceremonia {
   color: #b0b0b0; 
 }
 
-
-
 #labelTooSmall,
 #labelTooBig{
   display: none;
 }
-
