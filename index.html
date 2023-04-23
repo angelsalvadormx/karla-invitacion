@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./src/styles/invitacion.css?ver=2">
     <link rel="stylesheet" href="./src/styles/responsive.css?ver=2">
     <link rel="stylesheet" href="./src/bootstrap/bootstrap.min.css?ver=2">
+    <link href="https://file.myfontastic.com/is9MpHAxX4dNNuT8uKxXaG/icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <p id="msg-api"></p>
     </section>
     <!--Header-->
-    <header>
+    <header id="header">
         <section class="header p-2">
             <section class="img-icono" style="background-image: url('./src/img/mis-xv.png')"></section>
             <div class="container d-flex justify-content-center">
@@ -56,21 +57,21 @@
     <section id="parents">
         <div>
             <h4 class="subTitleSec">Mis padres</h4>
-            <p class="familia d-flex w-100 justify-content-center text-center">Miriam Hernández & Luis López Gutiérrez
+            <p class="familia w-100 text-center"><span> Jose Carlos Ponce Tejeda </span> <span class="and">&</span> <span> Cinthya Castañeda Ceballos</span>
             </p>
         </div>
         <div id="grandparents">
             <h4 class="subTitleSec">Mis abuelos</h4>
             <main class="d-flex justify-content-between">
                 <section class="d-flex flex-column align-items-center">
-                    <sapn class="text-center">Luis Hernández Pérez </sapn>
+                    <sapn class="text-center">Jos&eacute; Luis Castañeda Villalbazo </sapn>
                     <span> & </span>
-                    <sapn class="text-center">Juana Martínez Ochoa</sapn>
+                    <sapn class="text-center">Silvia Ceballos Barreto</sapn>
                 </section>
                 <section class="d-flex flex-column align-items-center">
-                    <sapn class="text-center">José López Martínez </sapn>
+                    <sapn class="text-center">Daniel Ponce Velazquez</sapn>
                     <span> & </span>
-                    <sapn class="text-center">Raquel Gutiérrez Flores</sapn>
+                    <sapn class="text-center">Ma Guadalupe Tejeda Lizardi</sapn>
                 </section>
             </main>
         </div>
@@ -123,7 +124,7 @@
     <section id="location">
         <div class="item-location d-flex align-items-center justify-content-center">
             <div class="blur-section"></div>
-            <div class="w-50">
+            <div class="w-50 img-location">
                 <div class="img-bckg" style="background-image: url('./src/img/img-iglesia.png');"></div>
             </div>
             <main class="w-50 d-flex flex-column justify-content-center">
@@ -140,7 +141,7 @@
             </main>
         </div>
         <div class="item-location evento d-flex align-items-center justify-content-center">
-            <main class="w-50 col-6 d-flex flex-column justify-content-center">
+            <main class="w-50 d-flex flex-column justify-content-center">
                 <h3 class="ceremonia">EVENTO</h3>
                 <section class="lines">
                     <div class="line-1"></div>
@@ -153,8 +154,8 @@
                     9:00 PM</p>
             </main>
             <div class="blur-section"></div>
-            <div class="w-50">
-                <div class="img-bckg" style="background-image: url('./src/img/img-picnic.png');"></div>
+            <div class="w-50 img-location">
+                <div class="img-bckg" style="background-image: url('./src/img/xv-table.jpg');"></div>
             </div>
 
         </div>
@@ -168,28 +169,20 @@
         </div>
         <main class="d-flex flex-wrap justify-content-center">
             <div class="item-godfather">
-                <h3>Joel Hernández López</h3>
-                <p>Padrino velación</p>
+                <h3>Padrino velación</h3>
+                <p>Ignacio Amezcua</p>
             </div>
             <div class="item-godfather">
-                <h3>Karla Hernández López</h3>
-                <p>Madrina velación</p>
+                <h3>Madrina velación</h3>
+                <p>Jessica Amezcua</p>
             </div>
             <div class="item-godfather">
-                <h3>Cristal López Suárez</h3>
-                <p>Madrina de brindis</p>
+                <h3>Padrino de presentación</h3>
+                <p>Jose Felix Melendrez</p>
             </div>
             <div class="item-godfather">
-                <h3>Saúl Ceballos López</h3>
-                <p>Padrino de pastel</p>
-            </div>
-            <div class="item-godfather">
-                <h3>Cecilia Preciado Flores</h3>
-                <p>Madrina de vestido</p>
-            </div>
-            <div class="item-godfather">
-                <h3>Sara López Suárez</h3>
-                <p>Madrina de cojín</p>
+                <h3>Madrina de presentación</h3>
+                <p>Ma Guadalupe Chavez</p>
             </div>
         </main>
     </section>
@@ -228,11 +221,20 @@
         <section class="separador"></section>
     </section>
     <footer id="footer">
+        <p id="labelTooSmall">Patalla muy chica</p>
+        <p id="labelTooBig">Invitaci&oacute;n solo disponible para dispositvos mobiles</p>
         <main class="d-flex align-items-center justify-content-center flex-column">
             <h4> <a href="https://colxsoft.com" target="_blank"> Colxsoft </a> | Invitaci&oacute;nes</h4>
         </main>
         <p class="label">Crea tu invitaci&oacute;n con nosotros</p>
-        <div class="social-media"></div>
+        <div class="social-media">
+            <a href="">
+                <i class="icon-facebook-square"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5213334945118&text=Hola Me intersa una invitacion" target="_blank">
+                <i class="icon-whatsapp"></i>
+            </a>
+        </div>
     </footer>
 
     <!--Bootstrap-->

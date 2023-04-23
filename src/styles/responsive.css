@@ -1,3 +1,422 @@
-@media (max-width: 770px){
+@media (min-width: 1000px){
+  #colxsoftInfo,
+  section.header,
+  #gift,
+  #godfather,
+  #location, 
+  #parents,
+  #counter,
+  #attendance{
+    display: none !important;
   
+}  
+    #header{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+  }
+  #footer{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%)
+  }
+  #labelTooBig{
+    display: block;
+  }
+}
+@media (max-width: 580px){
+  #gift h2,
+  #counter h3{
+    font-size: 30px !important;
+  }
+  p.fecha{
+    width: 60px;
+    height: 60px;
+  }
+  #gift .img-bckg{
+    width: 103px;
+    height: 80px;
+  }
+  p.parrafo{
+    width: 90%;
+  }
+  h3.ceremonia{font-size: 23px;}
+  .location-text{
+    font-size: 13px;
+  }
+  .img-bckg{
+    height: 220px;
+  }
+}
+@media (max-width: 500px){
+  .img-icono{
+    
+  width: 300px;
+  height: 200px;
+  }
+  h1.titulo{
+    
+  font-size: 60px;
+  }
+  p.parrafo{
+    
+  font-size: 11px;
+  }
+  .date-header span{
+    
+  font-size: 14px;
+  margin: 0 10px;
+  }
+  .line-5, .line-6{
+    
+  width: 96px;
+  }
+  .lines{
+    width: 90%;
+margin: 0 auto;
+  }
+  p.familia{
+    font-size: 13px;
+  }
+  .subTitleSec{
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #counter main .counter-main{
+    width: 70%;
+  }
+  #gift h2, #counter h3{
+    font-size: 26px !important;
+  }
+  .location-text{
+      
+  font-size: 12px;
+  }
+  .img-bckg{
+    
+  height: 200px;
+  }
+  #godfather h2{
+    
+  font-size: 29px !important;
+  }
+  .item-godfather h3{
+    
+  font-size: 14px;
+  }
+  .item-godfather p{
+    
+  font-size: 12px;
+  }
+  #attendance main{
+    
+  height: 207px;
+  }
+  .footer-card #boletos{
+    
+  font-size: 12px;
+  }
+  .main-card h4{
+    
+  font-size: 21px;
+  }
+  #footer{
+    
+  padding-bottom: 10px;
+  }
+  #grandparents main{
+    
+  width: 90%;
+  }
+  #grandparents main section sapn{
+    font-size: 13px;
+  }
+  .subTitleSec{
+   margin-bottom: 0; 
+  font-size: 20px;
+  }
+  #grandparents .subTitleSec{
+    
+  margin-bottom: 8px;
+  }
+  #attendance main{
+    
+  width: 85%;
+  }
+  #location .img-location{
+    
+  width: 100% !important;
+  }
+  .item-location{
+    position: relative;
+  }
+  #location main{
+    position: absolute;
+  }
+  #location .img-bckg{
+    
+  height: 300px;
+  }
+  .blur-section{
+   width: 62%;
+  right: 0;
+  height: 70%;
+  bottom: 0; 
+  border-radius: 12px;
+   
+  backdrop-filter: blur(3.5px);
+  }
+  .evento .blur-section{
+  left: 0;
+   }
+   
+  #location main{
+    
+  right: 29px;
+  bottom: 40px;
+  color: #fff;
+  }
+  .evento main {
+  left: 27px;
+    
+  }
+  .evento h3,
+  .evento .location-text{
+    color: #4d4a4a;
+  }
+  .evento .blur-section{
+    
+  }
+  
+  #location .lines{
+    
+  border-radius: 10px;
+  overflow: hidden;
+  }
+}
+
+@media (max-width: 419px){
+  .line-5, .line-6{
+    
+  width: 81px;
+  }
+  #grandparents{
+    
+  margin-top: 33px;
+  }
+  #grandparents main section sapn{
+    
+  width: 100%;
+  font-size: 12px;
+  }
+  p.familia{
+    
+  display: flex;
+  flex-direction: column;
+  }
+  p.familia span{
+    
+  height: 22px;
+  }
+  #grandparents .subTitleSec{
+    
+  margin-bottom: 4px;
+  }
+  #grandparents main{
+    
+  flex-wrap: wrap;
+  }
+  #grandparents main > section{
+    margin: 13px auto;
+  }
+  
+  #gift h2, #counter h3{
+    
+  font-size: 20px !important;
+  }
+  p.fecha{
+    
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  }
+  .location-text{
+  width: 90%;
+  }
+  #attendance{
+    
+  height: 560px;
+  }
+  #attendance main{
+    
+  height: 180px;
+  }
+  #gift .description{
+    
+  width: 80%;
+  }
+  
+}
+@media (max-width: 360px){
+  .img-icono{
+    
+  width: 250px;
+  height: 173px;
+  }
+  h1.titulo{
+    
+  font-size: 50px;
+  margin-bottom: 0;
+  }
+  p.parrafo{
+    
+  font-size: 10px;
+  width: 100%;
+  }
+  .lines{
+    width: 100%;
+  }
+  .line-5, .line-6{
+    
+  width: 70px;
+  }
+  .date-header span{
+    
+  font-size: 13px;
+  }
+  section.pink{
+    
+  padding: 28px 0;
+  }
+  #counter main{
+    margin-bottom: 15px;
+  }
+  #counter h3{
+  font-size: 22px !important;
+  }
+  p.fecha{
+    
+  width: 45px;
+  height: 45px;
+  }
+  #location main{
+    
+  width: 55% !important;
+  }
+  .blur-section{
+    
+  width: 72%;
+  }
+}
+
+@media (max-width: 330px){
+  #counter main .counter-main{
+    
+  width: 90%;
+  }
+  #godfather h2{
+    
+  font-size: 24px !important;
+  }
+  .item-godfather h3{
+    
+  font-size: 13px;
+  }
+  .item-godfather p{
+    
+  font-size: 11px;
+  }
+  h3.ceremonia{
+    
+  font-size: 20px;
+  }
+  .location-text{
+    
+  font-size: 11px;
+  }
+  #attendance main{
+    
+  width: 92%;
+  height: 166px;
+  }
+  .main-card > span{
+    
+  font-size: 14px;
+  }
+  .footer-card #boletos{
+    
+  font-size: 11px;
+  }
+  .main-card h4{
+    
+  font-size: 18px;
+  }
+  .main-card .desc{
+    
+  font-size: 11px;
+  }
+  #msjConfirmacion{
+    
+  font-size: 11px;
+  }
+  #mainColxsoftInfo h3{
+  font-size: 20px;
+  }
+  #colxsoftInfo #text-right{
+    
+  width: 107px;
+  }
+  #colxsoftInfo #text-left{
+    
+  width: 96px;
+  }
+}
+@media (max-width: 302px){
+  .line-5, .line-6{
+    
+  width: 57px;
+  }
+  .img-icono{
+    
+  width: 214px;
+  }
+  h1.titulo{
+    
+  font-size: 47px;
+  }
+}
+
+@media (max-width: 252px){
+  #colxsoftInfo,
+  section.header,
+  #gift,
+  #godfather,
+  #location, 
+  #parents,
+  #counter,
+  #attendance{
+    display: none !important;
+  
+}
+  #header{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+  }
+  #footer{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%)
+  }
+  #labelTooSmall{
+    display: block;
+  }
 }
