@@ -1,3 +1,4 @@
 RewriteEngine On
 
+RewriteRule ^preview/$  index_preview.html [L,NC]
 RewriteRule ^([A-Za-z0-9-\s]+)$  index.html [L,NC]

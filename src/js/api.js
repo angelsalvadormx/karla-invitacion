@@ -1,5 +1,5 @@
-const baseURL = "https://colxsoft.com/invitaciones/app/api";
-const apiVersion = "/";
+const baseURL = "https://colxsoft.com/invitaciones/app/api/";
+const apiVersion = "";
 
 const getToken = () => {
   //Obtener URL invitacion
