@@ -1,7 +1,6 @@
 
 const apiUrl = getApiURL() + getToken();
 //Consulta a la API para regresar el nombre de la familia
-console.log(apiUrl);
 fetch(apiUrl)
   .then(response => response.json())
   .then(({data,aceptado,status}) => {

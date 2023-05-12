@@ -12,24 +12,27 @@ const hideBtnConfirmation = () => {
   btnConfirm.classList.add('displayNone');
 }
 
-const body = document.getElementsByTagName('body')[0];
+// const body = ;
+const colxsoftInfo = document.getElementById('colxsoftInfo');
+
 const startApp = () => {
   const mainColxsoftInfo = document.getElementById('mainColxsoftInfo');
   mainColxsoftInfo.classList.add('start');
-  body.style.overflow = "hidden";
 }
 
 
 
 const closeColxsoftInfo = ()=> {
-  setTimeout(function(){
-    const colxsoftInfo = document.getElementById('colxsoftInfo');
+  setTimeout(()=>{
+    // document.getElementsByTagName('body')[0].classList.remove("overflowHidden");
     colxsoftInfo.classList.add('hide');
-    setTimeout(()=>{
-      colxsoftInfo.classList.add('z-index-3');
-    },400)
-    body.style.overflow = "initial";
+    removeClass('loading');
   },1500)
+}
+
+const removeClass = (className) => {
+  const element = document.getElementsByClassName(className)[0];
+  element.classList.remove(className);
 }
 
 const addTextColxsoftInfo = (text) => {
